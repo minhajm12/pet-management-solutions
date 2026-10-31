@@ -78,7 +78,7 @@ export const homePricingData: HomePricingItem[] = [
 ];
 
 export default function HomePricingSlider() {
-  
+
   const swiperRef = useRef<any>(null);
 
   const settings = {
@@ -122,9 +122,9 @@ export default function HomePricingSlider() {
         <button
           type="button"
           onClick={goToPrev}
-          title="Previous Package"
-          aria-label="Previous Package"
-          className="custm-slider-prev bg-white hover:bg-black text-black hover:text-white rounded-full w-[50px] h-[30px] flex items-center justify-center cursor-pointer border border-black duration-200 transition-all group"
+          title="Previous Stylist"
+          aria-label="Previous Stylist"
+          className="custm-slider-prev bg-white hover:bg-black text-black hover:text-white rounded-full w-[40px] h-[40px] flex items-center justify-center cursor-pointer border border-black duration-200 transition-all group"
         >
           <Icons.Slider_Arrow className="fill-black group-hover:fill-white common-transition" />
         </button>
@@ -132,9 +132,9 @@ export default function HomePricingSlider() {
         <button
           type="button"
           onClick={goToNext}
-          title="Next Package"
-          aria-label="Next Package"
-          className="custm-slider-next bg-white hover:bg-black text-black hover:text-white rounded-full w-[50px] h-[30px] flex items-center justify-center cursor-pointer border border-black duration-200 transition-all group"
+          title="Next Stylist"
+          aria-label="Next Stylist"
+          className="custm-slider-next bg-white hover:bg-black text-black hover:text-white rounded-full w-[40px] h-[40px] flex items-center justify-center cursor-pointer border border-black duration-200 transition-all group"
         >
           <Icons.Slider_Arrow className="fill-black group-hover:fill-white rotate-180 common-transition" />
         </button>

@@ -1,6 +1,7 @@
 import ExploreSalon from "../HomePage/ExploreSalon";
 import FeaturesGridSection from "../HomePage/FeaturesGridSection";
 import HomeBanner from "../HomePage/HomeBanner";
+import HomeGroomerSection from "../HomePage/HomeGroomerSection";
 import HomePricingSection from "../HomePage/HomePricingSection";
 import HomeTestimonials from "../HomePage/HomeTestimonials";
 import MainCta from "../HomePage/MainCta";
@@ -30,6 +31,8 @@ function HomePage() {
             {/* Testimonials Section */}
             <HomeTestimonials />
 
+            {/* Meet Our Certified Pet Stylists Section */}
+            <HomeGroomerSection />
         </>
     );
 }
