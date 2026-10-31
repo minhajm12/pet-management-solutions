@@ -132,6 +132,10 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: var(--y-gap) 0 0 0;
 }
 
+.t-gap-pad{
+  padding-top: var(--y-gap) !important;
+}
+
 .common-transition {
   transition: all .3s ease-in-out;
 }
