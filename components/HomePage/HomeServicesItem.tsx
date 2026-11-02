@@ -28,9 +28,9 @@ function ServiceTypeIcon({ type }: { type: string }) {
 
 export default function HomeServicesItem({ service }: HomeServicesItemProps) {
   return (
-    <article className="bg-white rounded-[46px] p-2 flex flex-col border border-[#eee] hover:border-black common-transition w-full group">
+    <article className="bg-white rounded-[35px] 2xl:rounded-[46px] p-2 flex flex-col border border-[#eee] hover:border-black common-transition w-full group">
       {/* 1. Service Image */}
-      <div className="relative w-full aspect-[473/280] rounded-[40px] overflow-hidden bg-neutral-100">
+      <div className="relative w-full aspect-[473/280] rounded-[28px] 2xl:rounded-[40px] overflow-hidden bg-neutral-100">
         <Image
           src={service.image}
           alt={service.title}
@@ -60,7 +60,7 @@ export default function HomeServicesItem({ service }: HomeServicesItemProps) {
         </h3>
 
         {/* 4. Service Description */}
-        <p className="text-[18px] text-black font-poppins mt-1.5 leading-tight">
+        <p className="2xl:text-[18px] text-black font-poppins mt-1.5 leading-tight">
           {service.description}
         </p>
 
@@ -69,9 +69,9 @@ export default function HomeServicesItem({ service }: HomeServicesItemProps) {
           {service.points.map((point, index) => (
             <li
               key={`${service.id}-point-${index}`}
-              className="flex items-center gap-2.5 text-[16px] text-black font-medium"
+              className="flex items-center gap-2.5 2xl:text-[16px] text-[14px] text-black font-medium"
             >
-              <Icons.servicesPoints_Icon className="size-[18px] shrink-0 fill-black" />
+              <Icons.servicesPoints_Icon className="2xl:size-[18px] size-[16px] shrink-0 fill-black" />
               <span className="leading-tight">{point}</span>
             </li>
           ))}
@@ -86,7 +86,7 @@ export default function HomeServicesItem({ service }: HomeServicesItemProps) {
             BtnArrow={true}
           />
           <div className="font-google-sans text-right whitespace-nowrap text-[15px] font-semibold text-black">
-            <span className="text-black font-normal text-[18px]">Price: </span>
+            <span className="text-black font-normal text-[16px]">Price: </span>
             <span className="font-bold text-[22px]">₹{service.price.toLocaleString("en-IN")}/-</span>
           </div>
         </div>

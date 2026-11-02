@@ -142,6 +142,10 @@ export default function TestimonialSlider() {
         spaceBetween: 20,
       },
       1400: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      1600: {
         slidesPerView: 4.5,
         spaceBetween: 20,
       },

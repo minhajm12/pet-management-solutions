@@ -143,7 +143,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* RESPONSIVE CONTROLL */
 @media (max-width: 1536px) {
   :root {
-    --main-padding: 100px;
+    --main-padding: 80px;
     --y-gap: 90px;
   }
 }

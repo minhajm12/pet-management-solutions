@@ -32,7 +32,7 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
           {/* Textured Pricing Header */}
           <div
             className={`relative ${isRecommended ? "rounded-[26px]" : "rounded-[26px]"
-              } p-6 sm:p-7 overflow-hidden flex flex-col gap-4 ${isRecommended ? "text-white" : "text-black"
+              } 2xl:p-6 lg:p-6 sm:p-7 overflow-hidden flex flex-col gap-4 ${isRecommended ? "text-white" : "text-black"
               }`}
           >
             <Image
@@ -45,11 +45,11 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
 
             {/* Package Title & Subtitle */}
             <div className="flex flex-col gap-1 relative z-1">
-              <h3 className="font-google-sans text-[22px] lg:text-[24px] font-semibold leading-tight">
+              <h3 className="font-google-sans text-[22px] 2xl:text-[24px] font-semibold leading-tight">
                 {item.title}
               </h3>
               <p
-                className={`font-poppins text-[14px] sm:text-[16px] leading-tight ${isRecommended ? "text-white" : "text-primaryColor"
+                className={`font-poppins text-[14px] lg:text-[16px] leading-tight ${isRecommended ? "text-white" : "text-primaryColor"
                   }`}
               >
                 {item.subtitle}
@@ -58,11 +58,11 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
 
             {/* Price Display */}
             <div className="flex items-baseline gap-2.5 mt-4 relative z-1">
-              <span className="font-google-sans text-[36px] sm:text-[40px] font-bold leading-none">
+              <span className="font-google-sans 2xl:text-[36px] lg:text-[32px] sm:text-[40px] font-bold leading-none">
                 ${item.price.toFixed(2)}
               </span>
               <span
-                className={`font-google-sans text-[18px] sm:text-[20px] line-through font-normal leading-none ${isRecommended ? "text-white/50" : "text-black/50"
+                className={`font-google-sans text-[16px] lg:text-[18px] 2xl:text-[20px] line-through font-normal leading-none ${isRecommended ? "text-white/50" : "text-black/50"
                   }`}
               >
                 ${item.originalPrice.toFixed(2)}
@@ -84,7 +84,7 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
             <div className="w-full mt-2 relative z-1">
               <Link
                 href={item.buttonUrl}
-                className={`w-full py-3.5 px-6 rounded-[20px] font-google-sans font-bold text-[22px] flex items-center justify-center gap-2.5 common-transition shadow-sm group/btn ${isRecommended
+                className={`w-full 2xl:py-3.5 py-3 px-6 2xl:rounded-[20px] rounded-[16px] font-google-sans font-bold 2xl:text-[22px] text-[20px] flex items-center justify-center gap-2.5 common-transition shadow-sm group/btn ${isRecommended
                   ? "bg-white text-black hover:bg-transparent border hover:border-white hover:text-white"
                   : "bg-linear-to-r from-gradeColor1 to-gradeColor2 text-white hover:opacity-90"
                   }`}
@@ -100,7 +100,7 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
         </div>
 
         {/* Lower Features Area */}
-        <div className="p-4 sm:p-5 flex flex-col flex-1 justify-between gap-4">
+        <div className="p-4 2xl:p-5 flex flex-col flex-1 justify-between gap-4">
           {/* Eligibility Badge */}
           <div className="inline-flex items-center gap-2 bg-[#F3F4F6] text-[#1F2937] px-3.5 py-1.5 rounded-full text-[13px] font-medium w-fit">
             <Icons.ShieldCheck_Icon className="size-3.5 text-emerald-600 shrink-0" />
@@ -108,7 +108,7 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
           </div>
 
           {/* Included Services List */}
-          <div className="bg-[#fafafa] rounded-[24px] p-5 sm:p-6 flex flex-col gap-3.5">
+          <div className="bg-[#fafafa] rounded-[24px] p-5 sm:p-5 flex flex-col gap-3.5">
             <ul className="flex flex-col gap-3.5">
               {item.features.map((feature, index) => (
                 <li

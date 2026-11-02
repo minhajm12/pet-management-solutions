@@ -59,7 +59,7 @@ function Header() {
                                 width={122}
                                 height={68}
                                 preload
-                                className="w-full h-auto"
+                                className="w-full !h-[60px]"
                                 style={{ width: "auto", height: "auto" }}
                             />
                         </Link>
@@ -76,7 +76,7 @@ function Header() {
                                         <Link
                                             href={link.href}
                                             title={`Navigate to ${link.label}`}
-                                            className={`!font-google-sans relative overflow-hidden flex flex-col py-[4px] lg:px-[16px] xl:px-[18px] rounded-[40px] 2xl:text-[18px] text-[16px] font-normal transition duration-300 group ${isActive
+                                            className={`!font-google-sans leading-tight relative overflow-hidden flex flex-col py-[4px] lg:px-[16px] xl:px-[18px] rounded-[40px] lg:text-[18px] text-[16px] font-normal transition duration-300 group ${isActive
                                                 ? "!font-bold"
                                                 : ""
                                                 }`}

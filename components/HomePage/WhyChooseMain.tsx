@@ -26,7 +26,7 @@ export default function WhyChooseMain() {
                     />
 
                     {/* Inside Image Badge */}
-                    <div className="absolute right-5 sm:right-8 lg:right-15 top-1/2 -translate-y-1/2 z-30 bg-white/90 rounded-full px-5 py-3 sm:px-14 sm:py-3.5 shadow-md flex flex-col items-center justify-center text-center pointer-events-none select-none backdrop-blur-2xl">
+                    <div className="absolute right-5 sm:right-8 lg:right-15 top-1/2 -translate-y-1/2 z-30 bg-white/90 rounded-full px-5 py-3 lg:px-8 2xl:px-14 sm:py-3.5 shadow-md flex flex-col items-center justify-center text-center pointer-events-none select-none backdrop-blur-2xl">
                         <span className="font-google-sans font-bold text-[24px] sm:text-[32px] text-black leading-tight">
                             100%
                         </span>
@@ -37,8 +37,8 @@ export default function WhyChooseMain() {
                 </div>
 
                 {/* Right: White Content Panel Overlapped by Image */}
-                <div className="relative w-full px-6 z-10 flex flex-col justify-center -mt-6 sm:-mt-8 lg:mt-0 pl-[70px] py-[50px]">
-                    <span className='absolute right-0 top-0 h-full bg-white w-[130%] rounded-r-[40px] rounded-l-full -z-1'></span>
+                <div className="relative w-full px-6 z-10 flex flex-col justify-center -mt-6 sm:-mt-8 lg:mt-0 2xl:pl-[70px] lg:pl-[50px] py-[50px]">
+                    <span className='block absolute right-0 top-0 h-full bg-white w-[130%] rounded-[50px] rounded-l-[300px] -z-1'></span>
 
                     {/* Main Heading */}
                     <MainTitle h2ClassName={'w-[80%]'} alignLeft title={'Pet Care Redefined With Love & Dignity'} description={'For Over 20 Years, Shear Heaven Pet Spa Has Been A Trusted Pet Groomer Serving Dog Owners With Reliable, High Quality Pet Grooming Services. We Understand That Every Dog Is Unique, Which Is Why Every Grooming Session Is Tailored To Their Breed, Coat Condition, Personality, And Comfort.'} contentClassName={''} />

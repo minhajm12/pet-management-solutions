@@ -81,7 +81,11 @@ export default function GroomerSlider() {
         slidesPerView: 2,
         spaceBetween: 15,
       },
-      1024: {
+      1200: {
+        slidesPerView: 2.5,
+        spaceBetween: 15,
+      },
+      1600: {
         slidesPerView: 3,
         spaceBetween: 20,
       },
@@ -101,7 +105,7 @@ export default function GroomerSlider() {
     <div className="w-full flex flex-col items-center">
       {/* Groomer Swiper Slider */}
       <div className="w-full">
-        <Swiper {...settings} className="w-full !overflow-hidden py-1 my-[40px]">
+        <Swiper {...settings} className="w-full !overflow-hidden py-1 my-[40px] rounded-[30px]">
           {groomersData.map((groomer) => (
             <SwiperSlide key={groomer.id} className="!h-auto flex">
               <article
@@ -143,7 +147,7 @@ export default function GroomerSlider() {
 
                   {/* Bottom Row: Experience, Rating, and Book Stylist Button */}
                   <div className="flex items-end justify-between gap-2 pt-1 border-t border-gray-100 sm:border-0 sm:pt-0">
-                    <div className="flex gap-[40px]">
+                    <div className="flex 2xl:gap-[40px] lg:gap-[30px] gap-[20px]">
                       {/* Experience Information */}
                       <div className="flex flex-col shrink-0">
                         <span className="font-google-sans text-[16px] md:text-[26px] font-bold text-black leading-tight">

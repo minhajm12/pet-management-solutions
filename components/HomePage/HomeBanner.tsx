@@ -21,6 +21,7 @@ function HomeBanner() {
             <Image
                 loading="eager"
                 className="w-full h-auto shadow-custom-shadow rounded-[30px]"
+                style={{ width: "100%", height: "auto" }}
                 src="/assets/img/dashboard-image.png" alt="Dashboard Image" title="Dashboard Image" width={1200} height={630} />
         </div>
     )

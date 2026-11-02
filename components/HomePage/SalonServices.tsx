@@ -67,7 +67,7 @@ export default function SalonServices() {
         {/* Tab Content Panels */}
         {salonServiceTabs.map((tab) => (
           <TabsContent key={tab.id} value={tab.id} className="w-full mt-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-[10px] 2xl:gap-[30px] w-full">
               {filteredServices.map((service) => (
                 <HomeServicesItem key={service.id} service={service} />
               ))}
