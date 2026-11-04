@@ -2,12 +2,13 @@
 
 import Image from "next/image"
 import Link from "next/link"
-// import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import MobileMenu from "../common/MobileMenu";
 import { useState } from "react";
 // import { Icons } from "../common/Icons";
 import { usePathname } from "next/navigation";
 import MainBtn from "../common/MainBtn";
+import { Icons } from "../common/Icons";
 // import { headerConfig } from "@/lib/data/common/header";
 
 const headerData = {
@@ -102,18 +103,18 @@ function Header() {
                             className="text-current xl:hidden cursor-pointer"
                             title="Open Navigation Menu"
                         >
-                            {/* <Icons.Menu_Icon className="size-[34px]" /> */}
+                            <Icons.Menu_Icon className="size-[34px]" />
                         </button>
                     </div>
                 </div>
             </nav>
 
             {/* Mobile Menu */}
-            {/* <Sheet open={menuOpen} onOpenChange={() => setMenuOpen(false)}>
+            <Sheet open={menuOpen} onOpenChange={() => setMenuOpen(false)}>
                 <SheetContent side={"right"} className="w-[85%] z-99">
-                    <MobileMenu navLinks={headerConfig.navLinks} closeMenu={() => setMenuOpen(false)} />
+                    <MobileMenu navLinks={headerData.navItems} closeMenu={() => setMenuOpen(false)} />
                 </SheetContent>
-            </Sheet> */}
+            </Sheet>
         </header>
     )
 }

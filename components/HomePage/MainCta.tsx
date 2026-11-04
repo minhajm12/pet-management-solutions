@@ -18,32 +18,32 @@ const CtaContent = {
 
 function MainCta() {
     return (
-        <div className='2xl:px-[40px] px-[10px] 2xl:py-[80px] py-[50px] bg-white'>
+        <div className='2xl:px-[40px] xl:px-[10px] lg:px-[40px] px-[20px] 2xl:py-[80px] py-[50px] bg-white'>
             <div className="grid grid-cols-12 grid-rows-3 gap-[10px]">
-                <div className="col-span-2 row-span-3">
-                    <div className='w-full overflow-hidden rounded-[30px]'>
-                        <Image src={CtaImages[0]} alt="" width={270} height={360} className='w-full h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
+                <div className="col-span-2 row-span-3 hidden xl:block">
+                    <div className='w-full overflow-hidden xl:rounded-[30px] rounded-[20px]'>
+                        <Image src={CtaImages[0]} alt="" width={270} height={360} className='w-full lg:h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
                     </div>
                 </div>
-                <div className="col-span-2 row-span-3 col-start-3">
-                    <div className='w-full overflow-hidden rounded-[30px]'>
-                        <Image src={CtaImages[1]} alt="" width={270} height={360} className='w-full h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
+                <div className="col-span-3 xl:col-span-2 row-span-3 xl:col-start-3 col-start-1">
+                    <div className='w-full overflow-hidden xl:rounded-[30px] rounded-[20px]'>
+                        <Image src={CtaImages[1]} alt="" width={270} height={360} className='w-full lg:h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
                     </div>
                 </div>
-                <div className="col-span-4 row-span-3 col-start-5 flex items-center">
-                    <div className="2xl:px-[20px] px-[10px] cta-content flex flex-col items-center 2xl:gap-[30px] gap-[20px]">
+                <div className="xl:col-span-4 col-span-6 row-span-3 col-start-4 xl:col-start-5 flex items-center justify-center">
+                    <div className="2xl:px-[20px] px-[10px] cta-content flex flex-col items-center 2xl:gap-[30px] gap-[20px] lg:w-[100%] xl:w-full">
                         <MainTitle title={CtaContent.title} description={CtaContent.description} contentClassName={''} />
                         <MainBtn bookIcon btnType='outline' text={'Book Appointment Now'} url={''} />
                     </div>
                 </div>
-                <div className="col-span-2 row-span-3 col-start-9">
-                    <div className='w-full overflow-hidden rounded-[30px]'>
-                        <Image src={CtaImages[2]} alt="" width={270} height={360} className='w-full h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
+                <div className="col-span-3 xl:col-span-2 xl:col-start-9 col-start-10 row-span-3">
+                    <div className='w-full overflow-hidden xl:rounded-[30px] rounded-[20px]'>
+                        <Image src={CtaImages[2]} alt="" width={270} height={360} className='w-full lg:h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
                     </div>
                 </div>
-                <div className="col-span-2 row-span-3 col-start-11">
-                    <div className='w-full overflow-hidden rounded-[30px]'>
-                        <Image src={CtaImages[3]} alt="" width={270} height={360} className='w-full h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
+                <div className="col-span-2 row-span-3 col-start-11 xl:block hidden">
+                    <div className='w-full overflow-hidden xl:rounded-[30px] rounded-[20px]'>
+                        <Image src={CtaImages[3]} alt="" width={270} height={360} className='w-full lg:h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
                     </div>
                 </div>
             </div>

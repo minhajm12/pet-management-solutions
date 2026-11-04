@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Google_Sans_Flex, Poppins } from "next/font/google";
+import { Google_Sans_Flex, Poppins, Geist } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const googleSans = Google_Sans_Flex({
   variable: "--font-google-sans",
@@ -27,18 +27,18 @@ export const metadata: Metadata = {
   description: "A comprehensive pet management solution for grooming businesses.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${googleSans.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", poppins.variable, googleSans.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-full flex flex-col font-google-sans">
-        <Header />
-        <SmoothScroll>
-          <main className="flex-1">{children}</main>
-        </SmoothScroll>
-        <Footer />
+        {children}
       </body>
     </html>
   );

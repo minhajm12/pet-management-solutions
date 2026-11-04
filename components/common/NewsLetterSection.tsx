@@ -19,22 +19,22 @@ export default function NewsLetterSection() {
   };
 
   return (
-    <div className="w-full bg-white rounded-[28px] sm:rounded-[36px] lg:rounded-[40px] p-6 sm:p-8 lg:p-12 shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-6 lg:gap-8">
+    <div className="w-full bg-white rounded-[28px] lg:rounded-[30px] xl:rounded-[40px] p-8 lg:p-8 xl:p-12 shadow-xs flex flex-row lg:flex-row items-center justify-between gap-6 lg:gap-8">
       {/* Newsletter Text Content */}
       <div className="flex flex-col">
         <h2 className="font-google-sans text-[22px] sm:text-[26px] lg:text-[30px] xl:text-[36px] font-bold text-black leading-tight">
           Receive Exclusive Spa Perks & Seasonal Tips
         </h2>
-        <p className="font-poppins w-[75%] text-[16px] 2xl:text-[18px] text-black font-normal leading-relaxed mt-2 sm:mt-2.5">
+        <p className="font-poppins xl:w-[75%] lg:w-[95%] text-[16px] 2xl:text-[18px] text-black font-normal leading-relaxed mt-2 sm:mt-2.5">
           Subscribe To Get 15% Off Spa Add-Ons And Early Holiday Appointment Access.
         </p>
       </div>
 
       {/* Subscription Form */}
-      <div className="w-full lg:w-auto shrink-0">
+      <div className="w-fit lg:w-auto shrink-0">
         <form
           onSubmit={handleSubmit}
-          className="flex items-center w-full lg:w-[440px] xl:w-[480px] border border-gray-400/80 rounded-full p-1 sm:p-1.5 bg-white common-transition focus-within:border-black"
+          className="flex items-center w-[350px] lg:w-[400px] xl:w-[440px] 2xl:w-[480px] border border-gray-400/80 rounded-full p-1 sm:p-1.5 bg-white common-transition focus-within:border-black"
           noValidate={false}
         >
           <label htmlFor="newsletter-email" className="sr-only">
@@ -47,11 +47,11 @@ export default function NewsLetterSection() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter Email Address"
-            className="font-poppins flex-1 bg-transparent px-3 sm:px-5 py-2 text-[13px] sm:text-[14px] text-black placeholder:text-gray-400 outline-none min-w-0"
+            className="font-poppins flex-1 bg-transparent px-3 sm:px-5 py-2 text-[14px] xl:text-[16px] text-black placeholder:text-gray-400 outline-none min-w-0"
           />
           <button
             type="submit"
-            className="font-poppins bg-black hover:bg-neutral-800 text-white text-[12px] sm:text-[13px] font-bold tracking-wider uppercase px-5 sm:px-7 py-2.5 sm:py-3 rounded-full common-transition shrink-0 cursor-pointer"
+            className="font-poppins bg-linear-to-r from-gradeColor1 to-gradeColor2 hover:bg-pink-600 text-white text-[14px] xl:text-[16px] font-bold tracking-wider uppercase px-5 sm:px-7 py-2.5 sm:py-3 rounded-full common-transition shrink-0 cursor-pointer"
           >
             {isSubmitted ? "SUBMITTED" : "SUBMIT"}
           </button>

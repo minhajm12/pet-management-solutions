@@ -44,13 +44,13 @@ export default function TestimonialsItems({ item }: TestimonialsItemsProps) {
           {initial}
         </div>
         <div className="flex flex-col">
-          <h4 className="font-google-sans font-bold text-[16px] text-black leading-tight mb-1">
+          <h4 className="font-google-sans font-bold text-[16px] md:text-[18px] lg:text-[16px] text-black leading-tight mb-1">
             {item.customerName}
           </h4>
-          <p className="font-google-sans text-[14px] text-black/70 leading-[14px] mt-0.5">
+          <p className="font-google-sans text-[14px] md:text-[16px] lg:text-[14px] text-black/70 leading-[14px] mt-0.5">
             Pet: {item.petName} ({item.petBreed})
           </p>
-          <p className="font-google-sans text-[14px] text-black/70 leading-[14px] mt-0.5">
+          <p className="font-google-sans text-[14px] md:text-[16px] lg:text-[14px] text-black/70 leading-[14px] mt-0.5">
             {item.service}
           </p>
         </div>

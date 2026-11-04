@@ -28,9 +28,9 @@ function ServiceTypeIcon({ type }: { type: string }) {
 
 export default function HomeServicesItem({ service }: HomeServicesItemProps) {
   return (
-    <article className="bg-white rounded-[35px] 2xl:rounded-[46px] p-2 flex flex-col border border-[#eee] hover:border-black common-transition w-full group">
+    <div className="bg-white rounded-[35px] 2xl:rounded-[46px] p-2 flex flex-col border border-[#eee] hover:border-black common-transition w-full group">
       {/* 1. Service Image */}
-      <div className="relative w-full aspect-[473/280] rounded-[28px] 2xl:rounded-[40px] overflow-hidden bg-neutral-100">
+      <div className="relative w-full aspect-12/8 rounded-[28px] 2xl:rounded-[40px] overflow-hidden bg-neutral-100">
         <Image
           src={service.image}
           alt={service.title}
@@ -42,8 +42,8 @@ export default function HomeServicesItem({ service }: HomeServicesItemProps) {
       </div>
 
       {/* 2. Compact Metadata Pill */}
-      <div className="px-4 pb-4">
-        <div className="mt-4 mb-3 inline-flex items-center gap-2.5 border border-primaryColor rounded-full px-4 py-1 text-[12px] font-medium text-primaryColor w-fit">
+      <div className="!pt-0 2xl:p-4 xl:p-3 p-3">
+        <div className="mt-4 mb-3 inline-flex items-center gap-2.5 border border-primaryColor rounded-full xl:px-4 px-2 xl:py-1 py-0.5 xl:text-[12px] text-[12px] font-medium text-primaryColor w-fit">
           <div className="flex items-center gap-1">
             <Icons.ServiceClock_Icon />
             <span>{service.durationMinutes} Mins</span>
@@ -55,21 +55,21 @@ export default function HomeServicesItem({ service }: HomeServicesItemProps) {
         </div>
 
         {/* 3. Service Title */}
-        <h3 className="text-[22px] font-semibold font-google-sans text-black leading-tight">
+        <h3 className="xl:text-[22px] lg:text-[18px] text-[20px] font-semibold font-google-sans text-black leading-tight">
           {service.title}
         </h3>
 
         {/* 4. Service Description */}
-        <p className="2xl:text-[18px] text-black font-poppins mt-1.5 leading-tight">
+        <p title={service.description} className="line-clamp-1 2xl:text-[18px] xl:text-[16px] lg:text-[14px] md:text-[16px] text-[14px] text-black font-poppins mt-1.5 leading-tight">
           {service.description}
         </p>
 
         {/* 5. Service-Point List */}
-        <ul className="flex flex-col gap-[10px] my-5">
+        <ul className="flex flex-col gap-[10px] xl:my-5 my-3">
           {service.points.map((point, index) => (
             <li
               key={`${service.id}-point-${index}`}
-              className="flex items-center gap-2.5 2xl:text-[16px] text-[14px] text-black font-medium"
+              className="flex items-center gap-2.5 2xl:text-[16px] lg:text-[14px] md:text-[16px] text-[14px] text-black font-medium"
             >
               <Icons.servicesPoints_Icon className="2xl:size-[18px] size-[16px] shrink-0 fill-black" />
               <span className="leading-tight">{point}</span>
@@ -78,12 +78,13 @@ export default function HomeServicesItem({ service }: HomeServicesItemProps) {
         </ul>
 
         {/* 6. Bottom Action Row */}
-        <div className="mt-auto flex items-center justify-between gap-3">
+        <div className="mt-auto flex xl:flex-row flex-col-reverse xl:items-center items-start justify-between xl:gap-3 gap-2">
           <MainBtn
             text={service.buttonText}
             url={service.buttonUrl}
             btnType="fill"
             BtnArrow={true}
+            className="xl:w-fit w-full justify-center"
           />
           <div className="font-google-sans text-right whitespace-nowrap text-[15px] font-semibold text-black">
             <span className="text-black font-normal text-[16px]">Price: </span>
@@ -91,6 +92,6 @@ export default function HomeServicesItem({ service }: HomeServicesItemProps) {
           </div>
         </div>
       </div>
-    </article>
+    </div>
   );
 }

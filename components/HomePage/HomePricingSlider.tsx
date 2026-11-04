@@ -92,7 +92,7 @@ export default function HomePricingSlider() {
     breakpoints: {
       0: { slidesPerView: 1, },
       600: { slidesPerView: 2, spaceBetween: 10, },
-      1024: { slidesPerView: 3, },
+      1024: { slidesPerView: 2, },
       1200: { slidesPerView: 3, },
     },
     onBeforeInit: (swiper: any) => {

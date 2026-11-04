@@ -45,11 +45,11 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
 
             {/* Package Title & Subtitle */}
             <div className="flex flex-col gap-1 relative z-1">
-              <h3 className="font-google-sans text-[22px] 2xl:text-[24px] font-semibold leading-tight">
+              <h3 className="font-google-sans text-[20px] md:text-[24px] lg:text-[22px] 2xl:text-[24px] font-semibold leading-tight">
                 {item.title}
               </h3>
               <p
-                className={`font-poppins text-[14px] lg:text-[16px] leading-tight ${isRecommended ? "text-white" : "text-primaryColor"
+                className={`font-poppins text-[14px] md:text-[16px] leading-tight ${isRecommended ? "text-white" : "text-primaryColor"
                   }`}
               >
                 {item.subtitle}
@@ -71,12 +71,12 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
 
             {/* Duration Pill */}
             <div
-              className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-medium border w-fit relative z-1 ${isRecommended
+              className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] md:text-[14px] font-medium border w-fit relative z-1 ${isRecommended
                 ? "border-white/60 text-white bg-black/20"
                 : "border-black text-black bg-white/50"
                 }`}
             >
-              <Icons.ServiceClock_Icon className="size-3" />
+              <Icons.ServiceClock_Icon className="lg:size-3 size-3.5" />
               <span>{item.durationMinutes} Mins</span>
             </div>
 
@@ -84,7 +84,7 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
             <div className="w-full mt-2 relative z-1">
               <Link
                 href={item.buttonUrl}
-                className={`w-full 2xl:py-3.5 py-3 px-6 2xl:rounded-[20px] rounded-[16px] font-google-sans font-bold 2xl:text-[22px] text-[20px] flex items-center justify-center gap-2.5 common-transition shadow-sm group/btn ${isRecommended
+                className={`w-full 2xl:py-3.5 py-3 px-6 2xl:rounded-[20px] rounded-[16px] font-google-sans font-bold 2xl:text-[22px] xl:text-[20px] text-[18px] flex items-center justify-center gap-2.5 common-transition shadow-sm group/btn ${isRecommended
                   ? "bg-white text-black hover:bg-transparent border hover:border-white hover:text-white"
                   : "bg-linear-to-r from-gradeColor1 to-gradeColor2 text-white hover:opacity-90"
                   }`}
@@ -102,7 +102,7 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
         {/* Lower Features Area */}
         <div className="p-4 2xl:p-5 flex flex-col flex-1 justify-between gap-4">
           {/* Eligibility Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#F3F4F6] text-[#1F2937] px-3.5 py-1.5 rounded-full text-[13px] font-medium w-fit">
+          <div className="inline-flex items-center gap-2 bg-[#F3F4F6] text-[#1F2937] px-3.5 py-1.5 rounded-full text-[14px] font-medium w-fit">
             <Icons.ShieldCheck_Icon className="size-3.5 text-emerald-600 shrink-0" />
             <span>{item.eligibility}</span>
           </div>

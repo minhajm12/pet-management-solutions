@@ -44,7 +44,7 @@ export default function SalonServices() {
         onValueChange={(val) => setActiveTab(val as SalonServiceCategoryId)}
         className="w-full flex flex-col items-center mt-[40px]"
       >
-        <div className="max-w-full overflow-x-auto pb-2 md:pb-0 scrollbar-none">
+        <div className="max-w-full overflow-x-auto pb-2 md:pb-0 scrollbar-none sticky top-[40px] z-3">
           <TabsList className="font-poppins inline-flex items-center p-1 rounded-full border border-black bg-white gap-2 shadow-xs">
             {salonServiceTabs.map((tab) => {
               const isActive = activeTab === tab.id;
@@ -66,8 +66,8 @@ export default function SalonServices() {
 
         {/* Tab Content Panels */}
         {salonServiceTabs.map((tab) => (
-          <TabsContent key={tab.id} value={tab.id} className="w-full mt-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-[10px] 2xl:gap-[30px] w-full">
+          <TabsContent key={tab.id} value={tab.id} className="w-full xl:mt-10 mt-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[8px] lg:gap-[10px] 2xl:gap-[30px] w-full">
               {filteredServices.map((service) => (
                 <HomeServicesItem key={service.id} service={service} />
               ))}

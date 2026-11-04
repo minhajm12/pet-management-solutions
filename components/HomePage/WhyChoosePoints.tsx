@@ -44,11 +44,11 @@ export default function WhyChoosePoints() {
       className="mt-6 sm:mt-8 lg:mt-10"
       aria-label="Why Choose Shear Heaven Features"
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-3 xl:gap-5 w-full">
         {whyChoosePointsData.map((item) => (
           <div
             key={item.id}
-            className="bg-white rounded-[28px] sm:rounded-[34px] p-7 sm:p-8 flex flex-col items-start justify-start h-full shadow-xs"
+            className="bg-white xl:rounded-[28px] lg:rounded-[24px] rounded-[16px] sm:rounded-[20px] p-6 lg:p-7 xl:p-8 flex flex-col items-start justify-start h-full shadow-xs"
           >
             {/* Feature Icon */}
             <div className="relative w-[44px] h-[48px] sm:w-[48px] sm:h-[50px] mb-5 sm:mb-6 shrink-0 flex items-center justify-start">

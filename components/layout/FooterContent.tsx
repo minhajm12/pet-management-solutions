@@ -9,7 +9,7 @@ export default function FooterContent() {
       {/* 4 Footer Columns */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 xl:gap-12">
         {/* Column 1: Logo and Brand Description */}
-        <div className="lg:col-span-4 xl:col-span-4 flex flex-col items-start">
+        <div className="lg:col-span-6 xl:col-span-4 flex flex-col items-start">
           <Link href="/" title="Navigate to Home" className="block mb-4 sm:mb-5">
             <Image
               src="/assets/img/logo/shear-heaven-logo.svg"
@@ -28,7 +28,7 @@ export default function FooterContent() {
         </div>
 
         {/* Column 2: Spa Treatments */}
-        <div className="lg:col-span-2 xl:col-span-2 flex flex-col">
+        <div className="lg:col-span-6 xl:col-span-2 flex flex-col">
           <h3 className="font-google-sans text-[20px] sm:text-[22px] font-semibold text-black mb-4 sm:mb-6">
             Spa Treatments
           </h3>
@@ -52,7 +52,7 @@ export default function FooterContent() {
         </div>
 
         {/* Column 3: Contact Details */}
-        <div className="lg:col-span-3 xl:col-span-3 flex flex-col">
+        <div className="lg:col-span-6 xl:col-span-3 flex flex-col">
           <h3 className="font-google-sans text-[20px] sm:text-[22px] font-semibold text-black mb-4 sm:mb-6">
             Contact Details
           </h3>
@@ -119,12 +119,12 @@ export default function FooterContent() {
         </div>
 
         {/* Column 4: Working Hours & Social Media */}
-        <div className="lg:col-span-3 xl:col-span-3 flex flex-col justify-between">
+        <div className="lg:col-span-6 xl:col-span-3 flex flex-col justify-between">
           <div className="flex flex-col">
             <h3 className="font-google-sans text-[20px] sm:text-[22px] font-semibold text-black mb-3.5">
               Working Hours
             </h3>
-            <div className="space-y-2 font-poppins text-[18px] text-black max-w-[320px]">
+            <div className="space-y-2 font-poppins text-[18px] text-black xl:max-w-[320px] lg:max-w-[350px]">
               <div className="flex justify-between items-center gap-4">
                 <span>Tue – Sat</span>
                 <span className="font-semibold text-black">9 am – 5 pm</span>
