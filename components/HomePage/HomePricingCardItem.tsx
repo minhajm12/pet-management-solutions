@@ -45,7 +45,7 @@ export default function HomePricingCardItem({ item }: HomePricingCardItemProps) 
 
             {/* Package Title & Subtitle */}
             <div className="flex flex-col gap-1 relative z-1">
-              <h3 className="font-google-sans text-[22px] md:text-[24px] lg:text-[22px] 2xl:text-[24px] font-semibold leading-tight">
+              <h3 className="font-google-sans text-[20px] md:text-[24px] lg:text-[22px] 2xl:text-[24px] font-semibold leading-tight">
                 {item.title}
               </h3>
               <p
