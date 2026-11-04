@@ -19,7 +19,7 @@ export default function NewsLetterSection() {
   };
 
   return (
-    <div className="w-full bg-white rounded-[28px] lg:rounded-[30px] xl:rounded-[40px] p-8 lg:p-8 xl:p-12 shadow-xs flex flex-row lg:flex-row items-center justify-between gap-6 lg:gap-8">
+    <div className="w-full bg-white rounded-[28px] lg:rounded-[30px] xl:rounded-[40px] p-8 lg:p-8 xl:p-12 shadow-xs flex flex-col md:flex-row items-center justify-between gap-6 lg:gap-8">
       {/* Newsletter Text Content */}
       <div className="flex flex-col">
         <h2 className="font-google-sans text-[22px] sm:text-[26px] lg:text-[30px] xl:text-[36px] font-bold text-black leading-tight">

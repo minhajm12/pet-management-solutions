@@ -35,18 +35,18 @@ const GridPoints = [
 function FeaturesGridSection() {
     return (
         <div className="main-padding y-gap">
-            <div className="grid grid-cols-6 grid-rows-6 xl:gap-4 gap-3">
+            <div className="grid md:grid-cols-6 grid-rows-6 xl:gap-4 gap-3">
                 {/* Grid 1 */}
                 <div className="relative xl:rounded-[30px] rounded-[20px] overflow-hidden col-span-2 bg-[#fff] min-h-[120px] row-span-6">
-                    <Image className="absolute left-1/2 -translate-x-[calc(50%-20px)] xl:-translate-x-[calc(50%-30px)] 2xl:-translate-x-[calc(50%-40px)] bottom-0 w-auto 2xl:h-[440px] xl:h-[360px] lg:h-[300px] h-[260px] object-contain lg:max-h-[65%] max-h-[80%]" src={GridData[0].img} alt="" width={500} height={650} style={{ width: "auto" }} />
                     <div className="content-div w-full flex flex-col gap-[3px] items-center justify-center px-[10px] py-[26px]">
-                        <h3 className="2xl:text-[40px] xl:text-[32px] lg:text-[24px] text-[22px] font-bold leading-tight">{GridData[0].title}</h3>
-                        <p className="2xl:text-[18px] xl:text-[16px] text-[14px] text-center leading-tight xl:w-[90%] w-[100%] font-normal">{GridData[0].description}</p>
+                        <h3 className="2xl:text-[40px] xl:text-[32px] md:text-[24px] text-[22px] font-bold leading-tight">{GridData[0].title}</h3>
+                        <p className="2xl:text-[18px] xl:text-[16px] text-[14px] text-center leading-tight xl:w-[90%] md:w-[100%] w-[100%] font-normal">{GridData[0].description}</p>
                     </div>
+                    <Image className="md:absolute relative left-1/2 -translate-x-[calc(50%-20px)] xl:-translate-x-[calc(50%-30px)] 2xl:-translate-x-[calc(50%-40px)] bottom-0 w-auto 2xl:h-[440px] xl:h-[360px] lg:h-[300px] h-[260px] object-contain lg:max-h-[65%] max-h-[80%]" src={GridData[0].img} alt="" width={500} height={650} style={{ width: "auto" }} />
                 </div>
 
                 {/* Grid 2 */}
-                <div className="relative xl:rounded-[30px] rounded-[20px] overflow-hidden col-span-2 min-h-[120px] row-span-4 col-start-3">
+                <div className="relative xl:rounded-[30px] rounded-[20px] overflow-hidden col-span-2 md:min-h-[120px] min-h-[280px] row-span-4 col-start-3">
                     <div className="content-div w-full flex flex-col gap-[3px] items-center justify-center px-[10px] py-[26px]">
                         <h3 className="2xl:text-[40px] xl:text-[32px] lg:text-[24px] text-[22px] font-bold leading-tight">{GridData[1].title}</h3>
                         <p className="2xl:text-[18px] xl:text-[16px] text-[14px] text-center leading-tight w-[90%] font-normal">{GridData[1].description}</p>

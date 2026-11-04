@@ -111,7 +111,7 @@ function Header() {
 
             {/* Mobile Menu */}
             <Sheet open={menuOpen} onOpenChange={() => setMenuOpen(false)}>
-                <SheetContent side={"right"} className="w-[85%] z-99">
+                <SheetContent side={"right"} className="w-[85%] z-99 bg-white border-none">
                     <MobileMenu navLinks={headerData.navItems} closeMenu={() => setMenuOpen(false)} />
                 </SheetContent>
             </Sheet>

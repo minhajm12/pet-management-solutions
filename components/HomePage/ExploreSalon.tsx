@@ -16,7 +16,7 @@ function ExploreSalon() {
         <div className="main-padding flex flex-col y-gap">
             <div className="title-section">
                 <MainTitle
-                    contentClassName="w-[50%]"
+                    contentClassName="md:w-[50%] w-[90%]"
                     title="Expore Salon Experiences"
                     description="Crafted for pure comfort, relaxation, and stunning breed-standard styling." />
             </div>
@@ -24,7 +24,7 @@ function ExploreSalon() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:gap-5 lg:gap-2 gap-4 w-full">
                     {salonItems.map((item: any, index: number) => {
                         return (
-                            <div key={index} className="relative bg-white 2xl:p-[50px] lg:px-[20px] lg:py-[30px] py-[30px] rounded-[30px] flex flex-col gap-[20px] items-center">
+                            <div key={index} className="relative bg-white 2xl:p-[50px] lg:px-[20px] lg:py-[30px] md:py-[30px] py-[25px] rounded-[30px] flex flex-col md:gap-[20px] gap-[10px] items-center">
                                 <div className="icon-div flex items-center justify-center xl:size-[100px] size-[80px] bg-linear-to-r from-gradeColor1 to-gradeColor2 xl:rounded-[20px] rounded-[14px] ">
                                     <Image
                                         src={item.img}
