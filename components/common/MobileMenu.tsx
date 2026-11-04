@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import MainBtn from './MainBtn'
 
 function MobileMenu({ closeMenu, navLinks }: any) {
     const pathname = usePathname();
@@ -40,7 +41,9 @@ function MobileMenu({ closeMenu, navLinks }: any) {
                     </ul>
                     {/* Buttons */}
                     <div onClick={closeMenu} className="mt-6 block md:hidden">
-                        {/* <MainBtn text="Book Now" url="/booknow" /> */}
+                        <div className="md:hidden block">
+                            <MainBtn text="Sign In" url="/" btnType="outline" />
+                        </div>
                     </div>
                 </div>
 

@@ -21,13 +21,13 @@ function MainCta() {
         <div className='2xl:px-[40px] xl:px-[10px] lg:px-[40px] px-[20px] 2xl:py-[80px] py-[50px] bg-white'>
             <div className="grid grid-cols-12 grid-rows-3 md:gap-[10px] gap-[5px]">
                 <div className="col-span-3 md:col-span-2 row-span-3 block md:hidden xl:block">
-                    <div className='w-full overflow-hidden xl:rounded-[30px] md:rounded-[20px] rounded-[10px]'>
-                        <Image src={CtaImages[0]} alt="" width={270} height={360} className='w-full lg:h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
+                    <div className='w-full h-full overflow-hidden xl:rounded-[30px] md:rounded-[20px] rounded-[10px]'>
+                        <Image src={CtaImages[0]} alt="" width={270} height={360} className='w-full !h-full object-cover hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
                     </div>
                 </div>
                 <div className="col-span-3 xl:col-span-2 row-span-3 xl:col-start-3 md:col-start-1 col-start-4">
-                    <div className='w-full overflow-hidden xl:rounded-[30px] md:rounded-[20px] rounded-[10px]'>
-                        <Image src={CtaImages[1]} alt="" width={270} height={360} className='w-full lg:h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
+                    <div className='w-full h-full overflow-hidden xl:rounded-[30px] md:rounded-[20px] rounded-[10px]'>
+                        <Image src={CtaImages[1]} alt="" width={270} height={360} className='w-full !h-full object-cover hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
                     </div>
                 </div>
                 <div className="order-5 xl:col-span-4 md:col-span-6 col-span-12 row-span-3 md:row-start-1 md:col-start-4 col-start-1 xl:col-start-5 flex items-center justify-center">
@@ -37,13 +37,13 @@ function MainCta() {
                     </div>
                 </div>
                 <div className="col-span-3 xl:col-span-2 xl:col-start-9 md:col-start-10 col-start-7 row-span-3">
-                    <div className='w-full overflow-hidden xl:rounded-[30px] md:rounded-[20px] rounded-[10px]'>
-                        <Image src={CtaImages[2]} alt="" width={270} height={360} className='w-full lg:h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
+                    <div className='w-full h-full overflow-hidden xl:rounded-[30px] md:rounded-[20px] rounded-[10px]'>
+                        <Image src={CtaImages[2]} alt="" width={270} height={360} className='w-full !h-full object-cover hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
                     </div>
                 </div>
                 <div className="col-span-3 md:col-span-2 row-span-3 md:col-start-11 col-start-10 xl:block md:hidden block">
-                    <div className='w-full overflow-hidden xl:rounded-[30px] md:rounded-[20px] rounded-[10px]'>
-                        <Image src={CtaImages[3]} alt="" width={270} height={360} className='w-full lg:h-auto hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
+                    <div className='w-full h-full overflow-hidden xl:rounded-[30px] md:rounded-[20px] rounded-[10px]'>
+                        <Image src={CtaImages[3]} alt="" width={270} height={360} className='w-full !h-full object-cover hover:scale-110 hover:rotate-[2deg] common-transition' style={{ height: "auto" }} />
                     </div>
                 </div>
             </div>

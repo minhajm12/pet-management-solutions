@@ -93,6 +93,7 @@ function Header() {
                         </ul>
                     </div>
 
+                    {/* AUTH SECTION */}
                     <div className="flex items-center gap-5">
                         {/* Buttons */}
                         <div className="md:block hidden">
