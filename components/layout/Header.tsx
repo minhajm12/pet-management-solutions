@@ -5,10 +5,11 @@ import Link from "next/link"
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import MobileMenu from "../common/MobileMenu";
 import { useState } from "react";
-// import { Icons } from "../common/Icons";
+
 import { usePathname } from "next/navigation";
 import MainBtn from "../common/MainBtn";
 import { Icons } from "../common/Icons";
+import HeaderProfile from "./HeaderProfile";
 // import { headerConfig } from "@/lib/data/common/header";
 
 const headerData = {
@@ -95,10 +96,18 @@ function Header() {
 
                     {/* AUTH SECTION */}
                     <div className="flex items-center gap-5">
+
+
                         {/* Buttons */}
                         <div className="md:block hidden">
                             <MainBtn text="Sign In" url="/" btnType="outline" />
                         </div>
+
+                        {/* Profile Section (shown when signed in - currently hidden as requested) */}
+                        <div className="block">
+                            <HeaderProfile />
+                        </div>
+
                         <button
                             onClick={() => setMenuOpen(true)}
                             className="text-current xl:hidden cursor-pointer"
