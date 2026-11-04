@@ -35,9 +35,9 @@ const GridPoints = [
 function FeaturesGridSection() {
     return (
         <div className="main-padding y-gap">
-            <div className="grid md:grid-cols-6 grid-rows-6 xl:gap-4 gap-3">
+            <div className="grid grid-cols-6 md:grid-rows-6 xl:gap-4 gap-3">
                 {/* Grid 1 */}
-                <div className="relative xl:rounded-[30px] rounded-[20px] overflow-hidden col-span-2 bg-[#fff] min-h-[120px] row-span-6">
+                <div className="relative xl:rounded-[30px] rounded-[20px] overflow-hidden col-span-6 md:col-span-2 md:row-span-6 bg-[#fff] min-h-[120px]">
                     <div className="content-div w-full flex flex-col gap-[3px] items-center justify-center px-[10px] py-[26px]">
                         <h3 className="2xl:text-[40px] xl:text-[32px] md:text-[24px] text-[22px] font-bold leading-tight">{GridData[0].title}</h3>
                         <p className="2xl:text-[18px] xl:text-[16px] text-[14px] text-center leading-tight xl:w-[90%] md:w-[100%] w-[100%] font-normal">{GridData[0].description}</p>
@@ -46,7 +46,7 @@ function FeaturesGridSection() {
                 </div>
 
                 {/* Grid 2 */}
-                <div className="relative xl:rounded-[30px] rounded-[20px] overflow-hidden col-span-2 md:min-h-[120px] min-h-[280px] row-span-4 col-start-3">
+                <div className="relative xl:rounded-[30px] rounded-[20px] overflow-hidden col-span-6 md:col-span-2 md:row-span-4 md:col-start-3 md:min-h-[120px] min-h-[280px]">
                     <div className="content-div w-full flex flex-col gap-[3px] items-center justify-center px-[10px] py-[26px]">
                         <h3 className="2xl:text-[40px] xl:text-[32px] lg:text-[24px] text-[22px] font-bold leading-tight">{GridData[1].title}</h3>
                         <p className="2xl:text-[18px] xl:text-[16px] text-[14px] text-center leading-tight w-[90%] font-normal">{GridData[1].description}</p>
@@ -56,14 +56,14 @@ function FeaturesGridSection() {
                 </div>
 
                 {/* Grid 3 */}
-                <div className="xl:rounded-[30px] rounded-[20px] row-span-2 bg-[#fff] min-h-[120px] col-start-5 flex items-center justify-center">
+                <div className="xl:rounded-[30px] rounded-[20px] col-span-3 md:col-span-1 md:row-span-2 md:col-start-5 bg-[#fff] min-h-[120px] flex items-center justify-center">
                     <div className="content-div w-full flex flex-col gap-[3px] items-center justify-center px-[10px] py-[26px]">
                         <h3 className="2xl:text-[40px] xl:text-[32px] lg:text-[24px] text-[22px] font-bold leading-tight">{GridData[2].title}</h3>
                         <p className="2xl:text-[18px] xl:text-[16px] text-[14px] text-center leading-tight w-full font-normal">{GridData[2].description}</p>
                     </div>
                 </div>
                 {/* Grid 4 */}
-                <div className="xl:rounded-[30px] rounded-[20px] row-span-2 bg-[#fff] min-h-[120px] col-start-6 flex items-center justify-center">
+                <div className="xl:rounded-[30px] rounded-[20px] col-span-3 md:col-span-1 md:row-span-2 md:col-start-6 bg-[#fff] min-h-[120px] flex items-center justify-center">
                     <div className="content-div w-full flex flex-col gap-[3px] items-center justify-center px-[10px] py-[26px]">
                         <h3 className="2xl:text-[40px] xl:text-[32px] lg:text-[24px] text-[22px] font-bold leading-tight">{GridData[3].title}</h3>
                         <p className="2xl:text-[18px] xl:text-[16px] text-[14px] text-center leading-tight w-full font-normal">{GridData[3].description}</p>
@@ -71,7 +71,7 @@ function FeaturesGridSection() {
                 </div>
 
                 {/* Grid 5 */}
-                <div className="relative xl:rounded-[30px] rounded-[20px] overflow-hidden col-span-2 bg-[#fff] min-h-[120px] row-span-2 col-start-3 row-start-5 flex items-center">
+                <div className="relative xl:rounded-[30px] rounded-[20px] overflow-hidden col-span-6 md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-5 bg-[#fff] min-h-[120px] flex items-center">
                     <div className="content-div w-full flex flex-col gap-[3px] items-end justify-center px-[10px] py-[26px] xl:pe-[32px] md:pe-[20px]">
                         <h3 className="2xl:text-[40px] xl:text-[32px] lg:text-[24px] text-[22px] font-bold leading-tight">{GridData[4].title}</h3>
                         <p className="2xl:text-[18px] xl:text-[16px] text-[14px] text-end leading-tight w-full font-normal lg:max-w-[180px] xl:max-w-[70%]">{GridData[4].description}</p>
@@ -80,7 +80,7 @@ function FeaturesGridSection() {
                 </div>
 
                 {/* Grid 6 */}
-                <div className="xl:rounded-[30px] rounded-[20px] col-span-2 max-h-[400px] row-span-4 col-start-5 row-start-3">
+                <div className="xl:rounded-[30px] rounded-[20px] col-span-6 md:col-span-2 md:row-span-4 md:col-start-5 md:row-start-3 max-h-[400px]">
                     <Image className="w-full h-full object-cover xl:rounded-[30px] rounded-[20px]" src={'/assets/img/grid-image-1.jpg'} alt="" width={500} height={500} />
                 </div>
             </div>

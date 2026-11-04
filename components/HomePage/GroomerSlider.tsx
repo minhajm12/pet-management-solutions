@@ -105,11 +105,11 @@ export default function GroomerSlider() {
     <div className="w-full flex flex-col items-center">
       {/* Groomer Swiper Slider */}
       <div className="w-full">
-        <Swiper {...settings} className="w-full !overflow-hidden py-1 my-[40px] rounded-[30px]">
+        <Swiper {...settings} className="w-full !overflow-hidden py-1 md:my-[40px] my-[20px] md:rounded-[30px] rounded-[20px]">
           {groomersData.map((groomer) => (
             <SwiperSlide key={groomer.id} className="!h-auto flex">
               <div
-                className="group/card relative w-full h-[480px] sm:h-[510px] lg:h-[410px] xl:h-[530px] rounded-[28px] overflow-hidden bg-neutral-100 select-none"
+                className="group/card relative w-full h-[380px] md:h-[510px] lg:h-[410px] xl:h-[530px] md:rounded-[28px] rounded-[20px] overflow-hidden bg-neutral-100 select-none"
                 aria-label={`${groomer.name} - ${groomer.designation}`}
               >
                 {/* Background Groomer Image with Hover Zoom */}
@@ -122,7 +122,7 @@ export default function GroomerSlider() {
                 />
 
                 {/* Overlapping Floating White Information Panel */}
-                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 z-10 bg-white rounded-[18px] xl:rounded-[24px] p-4 xl:p-5 flex flex-col gap-2 lg:gap-3 xl::gap-4 shadow-sm">
+                <div className="absolute bottom-1 left-1 right-1 sm:bottom-4 sm:left-4 sm:right-4 z-10 bg-white rounded-[18px] xl:rounded-[24px] p-3 md:p-4 xl:p-5 flex flex-col gap-2 lg:gap-3 xl::gap-4 shadow-sm">
                   {/* Top Row: Name, Verified Badge, Designation, and Black Circular Icon */}
                   <div className="flex items-center justify-between gap-2">
                     <div className="flex flex-col min-w-0">
@@ -179,7 +179,8 @@ export default function GroomerSlider() {
                         url={groomer.bookingUrl}
                         btnType="fill"
                         bookIcon={true}
-                        className="!px-3 sm:!px-4 !py-2 lg:!text-[14px] xl:!text-[16px] !gap-2 xl:!gap-4 whitespace-nowrap"
+                        iconDisable
+                        className="!px-3 sm:!px-4 !py-2 lg:!text-[14px] xl:!text-[16px] !gap-2 xl:!gap-4 whitespace-nowrap !rounded-[10px] md:!rounded-[40px]"
                       />
                     </div>
                   </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
@@ -81,14 +81,16 @@ export default function HomePricingSlider() {
 
   const swiperRef = useRef<any>(null);
 
+
   const settings = {
     modules: [Autoplay],
-    autoplay: { delay: 4000, disableOnInteraction: false },
-    speed: 500,
     loop: true,
-    // margin: 20,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 500,
     spaceBetween: 20,
-    // allowTouchMove: !isMobile,
     breakpoints: {
       0: { slidesPerView: 1, },
       600: { slidesPerView: 2, spaceBetween: 10, },
@@ -107,7 +109,7 @@ export default function HomePricingSlider() {
     <div className="w-full flex flex-col items-center">
       <div className="w-full">
         <Swiper ref={swiperRef} {...settings}
-          className="w-full !overflow-visible md:!overflow-hidden py-4"
+          className="w-full !overflow-hidden md:!overflow-hidden py-4"
         >
           {homePricingData.map((pkg) => (
             <SwiperSlide key={pkg.id} className="!h-auto flex">

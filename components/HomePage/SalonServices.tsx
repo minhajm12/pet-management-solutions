@@ -34,7 +34,7 @@ export default function SalonServices() {
         <MainTitle
           title="Signature Spa & Salon Services"
           description="Every Session Begins With A Gentle Pet Consultation, Coat Assessment, And Peaceful Acclimatization."
-          contentClassName="max-w-[620px] text-center mx-auto"
+          contentClassName="max-w-[620px] md:text-center mx-auto"
         />
       </div>
 
@@ -42,17 +42,17 @@ export default function SalonServices() {
       <Tabs
         value={activeTab}
         onValueChange={(val) => setActiveTab(val as SalonServiceCategoryId)}
-        className="w-full flex flex-col items-center mt-[40px]"
+        className="w-full flex flex-col items-center md:mt-[40px] mt-[20px]"
       >
-        <div className="max-w-full overflow-x-auto pb-2 md:pb-0 scrollbar-none sticky top-[40px] z-3">
-          <TabsList className="font-poppins inline-flex items-center p-1 rounded-full border border-black bg-white gap-2 shadow-xs">
+        <div className="max-w-full overflow-x-auto md:pb-0 scrollbar-none sticky md:top-[40px] top-[20px] z-3">
+          <TabsList className="font-poppins inline-flex items-center md:p-1 p-0.5 md:rounded-full rounded-[12px] border border-black bg-white gap-2 shadow-xs">
             {salonServiceTabs.map((tab) => {
               const isActive = activeTab === tab.id;
               return (
                 <TabsTrigger
                   key={tab.id}
                   value={tab.id}
-                  className={`rounded-full px-4 sm:px-5 md:px-6 py-2 text-[18px] font-semibold md:text-[15px] common-transition cursor-pointer whitespace-nowrap ${isActive
+                  className={`md:rounded-full rounded-[10px] px-3 sm:px-4 md:px-6 py-2 text-[14px] font-semibold md:text-[16px] common-transition cursor-pointer whitespace-nowrap ${isActive
                     ? "bg-linear-to-r from-gradeColor1 to-gradeColor2 text-white font-medium shadow-sm"
                     : "text-neutral-900 hover:text-black hover:bg-neutral-100"
                     }`}

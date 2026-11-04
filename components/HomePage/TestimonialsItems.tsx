@@ -9,7 +9,7 @@ export default function TestimonialsItems({ item }: TestimonialsItemsProps) {
   const initial = item.customerName.trim().charAt(0).toUpperCase();
 
   return (
-    <div className="relative bg-white rounded-[28px] p-7 sm:p-8 flex flex-col justify-between h-full w-full border border-neutral-100/80 transition-shadow duration-300">
+    <div className="relative bg-white rounded-[28px] p-6 md:p-8 flex flex-col justify-between h-full w-full border border-neutral-100/80 transition-shadow duration-300">
       {/* Decorative Quote Icon in upper-right */}
       <div className="absolute top-6 right-6 sm:top-7 sm:right-7 pointer-events-none select-none">
         <Icons.Quote_Icon />
@@ -34,13 +34,13 @@ export default function TestimonialsItems({ item }: TestimonialsItemsProps) {
       </div>
 
       {/* Testimonial Quote Text */}
-      <p className="font-poppins text-[16px] md:text-[18px] xl:text-[20px] text-black leading-relaxed my-7 relative z-1">
+      <p className="font-poppins text-[18px] md:text-[18px] xl:text-[20px] text-black leading-relaxed my-7 relative z-1">
         {item.quote}
       </p>
 
       {/* Customer Profile Section */}
       <div className="flex items-center gap-3.5 mt-auto relative z-1">
-        <div className="size-11 sm:size-12 rounded-full bg-black text-white font-bold font-google-sans text-[17px] sm:text-[18px] flex items-center justify-center shrink-0 select-none">
+        <div className="size-14 md:size-12 rounded-full bg-black text-white font-bold font-google-sans text-[24px] md:text-[22px] flex items-center justify-center shrink-0 select-none">
           {initial}
         </div>
         <div className="flex flex-col">

@@ -29,10 +29,10 @@ export default function FooterContent() {
 
         {/* Column 2: Spa Treatments */}
         <div className="lg:col-span-6 xl:col-span-2 flex flex-col">
-          <h3 className="font-google-sans text-[20px] sm:text-[22px] font-semibold text-black mb-4 sm:mb-6">
+          <h3 className="font-google-sans text-[20px] sm:text-[22px] font-semibold text-black mb-2 md:mb-4 lg:mb-6">
             Spa Treatments
           </h3>
-          <ul className="space-y-3 font-poppins text-[18px] text-black">
+          <ul className="space-y-3 font-poppins text-[16px] md:text-[18px] text-black">
             <li>
               <Link href="#" className="hover:opacity-75 transition-opacity">
                 The Royal Spa Sanctuary
@@ -53,10 +53,10 @@ export default function FooterContent() {
 
         {/* Column 3: Contact Details */}
         <div className="lg:col-span-6 xl:col-span-3 flex flex-col">
-          <h3 className="font-google-sans text-[20px] sm:text-[22px] font-semibold text-black mb-4 sm:mb-6">
+          <h3 className="font-google-sans text-[20px] sm:text-[22px] font-semibold text-black mb-2 md:mb-4 lg:mb-6">
             Contact Details
           </h3>
-          <div className="space-y-4 font-poppins text-[18px] text-black">
+          <div className="space-y-4 font-poppins text-[16px] md:text-[18px] text-black">
             {/* Address */}
             <div className="flex items-start gap-3">
               <span className="text-black shrink-0 mt-1">
@@ -121,10 +121,10 @@ export default function FooterContent() {
         {/* Column 4: Working Hours & Social Media */}
         <div className="lg:col-span-6 xl:col-span-3 flex flex-col justify-between">
           <div className="flex flex-col">
-            <h3 className="font-google-sans text-[20px] sm:text-[22px] font-semibold text-black mb-3.5">
+            <h3 className="font-google-sans text-[20px] sm:text-[22px] font-semibold text-black mb-2 md:mb-4 lg:mb-6">
               Working Hours
             </h3>
-            <div className="space-y-2 font-poppins text-[18px] text-black xl:max-w-[320px] lg:max-w-[350px]">
+            <div className="space-y-2 font-poppins text-[16px] md:text-[18px] text-black xl:max-w-[320px] lg:max-w-[350px]">
               <div className="flex justify-between items-center gap-4">
                 <span>Tue – Sat</span>
                 <span className="font-semibold text-black">9 am – 5 pm</span>
@@ -148,7 +148,7 @@ export default function FooterContent() {
                 aria-label="Visit Shear Heaven on Facebook"
                 className="text-black hover:opacity-75 transition-opacity"
               >
-                <Icons.Fb_Icon className="w-[27px] h-[27px]" />
+                <Icons.Fb_Icon className="size-[30px]" />
               </a>
               <a
                 href="https://youtube.com"
@@ -157,7 +157,7 @@ export default function FooterContent() {
                 aria-label="Visit Shear Heaven on YouTube"
                 className="text-black hover:opacity-75 transition-opacity"
               >
-                <Icons.Youtube_Icon className="w-[27px] h-[27px]" />
+                <Icons.Youtube_Icon className="size-[30px]" />
               </a>
               <a
                 href="https://x.com"
@@ -166,7 +166,7 @@ export default function FooterContent() {
                 aria-label="Visit Shear Heaven on X"
                 className="text-black hover:opacity-75 transition-opacity"
               >
-                <Icons.X_Icon className="w-[27px] h-[27px]" />
+                <Icons.X_Icon className="size-[30px]" />
               </a>
               <a
                 href="https://instagram.com"
@@ -175,7 +175,7 @@ export default function FooterContent() {
                 aria-label="Visit Shear Heaven on Instagram"
                 className="text-black hover:opacity-75 transition-opacity"
               >
-                <Icons.Insta_Icon className="w-[27px] h-[27px]" />
+                <Icons.Insta_Icon className="size-[30px]" />
               </a>
             </div>
           </div>
@@ -183,11 +183,11 @@ export default function FooterContent() {
       </div>
 
       {/* Bottom Copyright & Legal Bar */}
-      <div className="w-full bg-black text-white rounded-full px-6 sm:px-10 py-3.5 sm:py-4 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 mt-10 sm:mt-14">
-        <p className="font-poppins text-[16px] text-white/90 font-normal text-center sm:text-left">
+      <div className="w-full bg-black text-white lg:rounded-full rounded-[10px] px-4 md:px-10 py-3.5 sm:py-4 flex flex-col lg:flex-row items-center justify-between gap-2 md:gap-3 lg:gap-4 mt-10 sm:mt-14">
+        <p className="font-poppins leading-tight text-[12px] sm:text-[14px] md:text-[16px] text-white/90 font-normal text-center sm:text-left">
           © 2026 Shear Heaven Pet Spa. All Right Reserved.
         </p>
-        <div className="font-poppins text-[16px] text-white/90 font-normal flex items-center gap-2 sm:gap-3">
+        <div className="font-poppins leading-tight text-[12px] sm:text-[14px] md:text-[16px] text-white/90 font-normal flex items-center gap-2 sm:gap-3">
           <Link href="#" className="hover:text-white transition-colors">
             Privacy Policy
           </Link>
