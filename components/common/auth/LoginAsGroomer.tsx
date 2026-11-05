@@ -64,7 +64,7 @@ export default function LoginAsGroomer({
       <div className="flex flex-col mb-4">
         <label
           htmlFor="groomer-email"
-          className="flex items-center gap-2 font-poppins text-[14px] md:text-[16px] font-medium text-black mb-1.5"
+          className="flex items-center gap-2 font-poppins text-[14px] xl:text-[16px] font-medium text-black mb-1.5"
         >
           <Icons.AuthEmail_Icon className="shrink-0" />
           <span>Enter Email ID</span>
@@ -85,7 +85,7 @@ export default function LoginAsGroomer({
       <div className="flex flex-col mb-2">
         <label
           htmlFor="groomer-password"
-          className="flex items-center gap-2 font-poppins text-[14px] md:text-[16px] font-medium text-black mb-1.5"
+          className="flex items-center gap-2 font-poppins text-[14px] xl:text-[16px] font-medium text-black mb-1.5"
         >
           <Icons.AuthPassword_Icon className="shrink-0" />
           <span>Enter Password</span>

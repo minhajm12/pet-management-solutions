@@ -56,8 +56,8 @@ export default function HeaderProfile({
     <div className={`flex items-center gap-3 sm:gap-4 font-poppins ${className}`}>
       {/* My Pets Header Pill */}
       <Link
-        href="/pets"
-        className="flex items-center gap-3 bg-[#f5f5f5] hover:bg-[#ebebeb] transition-colors duration-200 rounded-full pl-5 pr-1.5 py-1.5 cursor-pointer select-none group"
+        href="/"
+        className="hidden lg:flex items-center gap-3 bg-[#f5f5f5] hover:bg-[#ebebeb] transition-colors duration-200 rounded-full pl-5 pr-1.5 py-1.5 cursor-pointer select-none group"
         title="View My Pets"
       >
         <span className="font-semibold text-[15px] text-neutral-900 tracking-tight">

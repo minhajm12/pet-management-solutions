@@ -174,9 +174,8 @@ export default function ResetPassword() {
                 </span>
               )}
               <span
-                className={`font-poppins text-[13px] ${
-                  item.valid ? "text-gray-900 font-medium" : "text-gray-500"
-                }`}
+                className={`font-poppins text-[13px] ${item.valid ? "text-gray-900 font-medium" : "text-gray-500"
+                  }`}
               >
                 {item.label}
               </span>
@@ -188,7 +187,7 @@ export default function ResetPassword() {
         <div className="flex justify-center mt-6 sm:mt-8">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 bg-[#f4f4f4] hover:bg-[#eaeaea] text-black border border-gray-200/80 rounded-full px-5 py-2 sm:py-2.5 font-poppins text-[12px] sm:text-[13px] font-medium transition-colors cursor-pointer"
+            className="inline-flex items-center gap-2 md:bg-[#f4f4f4] bg-white hover:bg-[#eaeaea] text-black border border-gray-200/80 rounded-full px-5 py-2 sm:py-2.5 font-poppins text-[12px] sm:text-[13px] font-medium transition-colors cursor-pointer"
           >
             <Icons.BtnArrow className="scale-x-[-1] w-[14px] h-[10px] fill-current" />
             <span>Back to Home</span>

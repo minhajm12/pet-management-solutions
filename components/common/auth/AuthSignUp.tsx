@@ -89,7 +89,7 @@ export default function AuthSignUp() {
                 setErrorMessage("");
               }}
               placeholder="Eg: Robert Martin"
-              className="w-full bg-white border border-black rounded-full px-5 2xl:py-4 lg:py-3.5 py-3 text-[16px] md:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+              className="w-full bg-white border border-black rounded-full px-5 pr-12 2xl:py-4 lg:py-3.5 py-3 text-[16px] md:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
             />
           </div>
 
@@ -113,7 +113,7 @@ export default function AuthSignUp() {
                 setErrorMessage("");
               }}
               placeholder="name@gmail.com"
-              className="w-full bg-white border border-black rounded-full px-5 2xl:py-4 lg:py-3.5 py-3 text-[16px] md:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+              className="w-full bg-white border border-black rounded-full px-5 pr-12 2xl:py-4 lg:py-3.5 py-3 text-[16px] md:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
             />
           </div>
 
@@ -137,7 +137,7 @@ export default function AuthSignUp() {
                 setErrorMessage("");
               }}
               placeholder="+(817) 123-4567"
-              className="w-full bg-white border border-black rounded-full px-5 2xl:py-4 lg:py-3.5 py-3 text-[16px] md:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+              className="w-full bg-white border border-black rounded-full px-5 pr-12 2xl:py-4 lg:py-3.5 py-3 text-[16px] md:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
             />
           </div>
 
@@ -249,7 +249,7 @@ export default function AuthSignUp() {
         <div className="flex justify-center mt-5 sm:mt-6">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 bg-[#f4f4f4] hover:bg-[#eaeaea] text-black border border-gray-200/80 rounded-full px-5 py-2 sm:py-2.5 font-poppins text-[12px] sm:text-[13px] font-medium transition-colors cursor-pointer"
+            className="inline-flex items-center gap-2 md:bg-[#f4f4f4] bg-white hover:bg-[#eaeaea] text-black border border-gray-200/80 rounded-full px-5 py-2 sm:py-2.5 font-poppins text-[12px] sm:text-[13px] font-medium transition-colors cursor-pointer"
           >
             <Icons.BtnArrow className="scale-x-[-1] w-[14px] h-[10px] fill-current" />
             <span>Back to Home</span>
