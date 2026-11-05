@@ -15,6 +15,7 @@ export default function LoginAsGroomer({
 }: LoginAsGroomerProps) {
   const [internalEmail, setInternalEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
@@ -76,7 +77,7 @@ export default function LoginAsGroomer({
           value={email}
           onChange={(e) => handleEmailChange(e.target.value)}
           placeholder="groomer@shearheaven.com"
-          className="w-full bg-white border border-black rounded-full px-5 py-4 text-[14px] lg:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+          className="w-full bg-white border border-black rounded-full px-5 pr-12 2xl:py-4 lg:py-3.5 py-3 text-[16px] md:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
         />
       </div>
 
@@ -89,25 +90,39 @@ export default function LoginAsGroomer({
           <Icons.AuthPassword_Icon className="shrink-0" />
           <span>Enter Password</span>
         </label>
-        <input
-          id="groomer-password"
-          type="password"
-          required
-          autoComplete="current-password"
-          value={password}
-          onChange={(e) => {
-            setPassword(e.target.value);
-            setErrorMessage("");
-          }}
-          placeholder="Enter Password"
-          className="w-full bg-white border border-black rounded-full px-5 py-4 text-[14px] lg:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
-        />
+        <div className="relative flex items-center">
+          <input
+            id="groomer-password"
+            type={showPassword ? "text" : "password"}
+            required
+            autoComplete="current-password"
+            value={password}
+            onChange={(e) => {
+              setPassword(e.target.value);
+              setErrorMessage("");
+            }}
+            placeholder="Enter Password"
+            className="w-full bg-white border border-black rounded-full px-5 pr-12 2xl:py-4 lg:py-3.5 py-3 text-[16px] md:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+          />
+          <button
+            type="button"
+            onClick={() => setShowPassword(!showPassword)}
+            className="absolute right-4 text-gray-500 hover:text-black transition-colors cursor-pointer p-1"
+            aria-label={showPassword ? "Hide password" : "Show password"}
+          >
+            {showPassword ? (
+              <Icons.PasswordEyeOff_Icon className="size-5" />
+            ) : (
+              <Icons.PasswordEyeOn_Icon className="size-5" />
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Forgot Password Link */}
       <div className="flex justify-end mb-5">
         <Link
-          href="#"
+          href="/forgot-password"
           className="font-poppins text-[14px] text-black hover:text-black underline transition-colors"
         >
           Forgot Password?

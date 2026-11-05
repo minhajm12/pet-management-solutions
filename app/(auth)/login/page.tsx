@@ -18,7 +18,7 @@ export default function LoginPage() {
 
       {/* Right Column: Authentication Content (5/12) */}
       <div className="col-span-12 lg:col-span-5 flex items-center justify-center  2xl:px-[100px] mc:px-[80px] xl:px-[60px] lg:px-[40px] md:px-[100px] sm:px-[40px]">
-        <div className="lg:hidden sm:block hidden absolute w-full h-full top-0 left-0 right-0 bottom-0 z-0"
+        <div className="lg:hidden block md:opacity-100 opacity-30 absolute w-full h-full top-0 left-0 right-0 bottom-0 z-0 "
           style={{
             backgroundImage: "url('/assets/img/auth/authbg.jpg')",
             backgroundRepeat: "no-repeat",

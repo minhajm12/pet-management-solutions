@@ -96,7 +96,7 @@ export default function HeaderProfile({
         >
           {/* Greeting Header */}
           <div className="px-3.5 pt-2 pb-2">
-            <h3 className="font-bold text-[17px] text-neutral-900 leading-snug">
+            <h3 className="font-semibold text-[17px] text-neutral-900 leading-snug">
               Hi, {userName}..!
             </h3>
           </div>
@@ -109,13 +109,13 @@ export default function HeaderProfile({
                 <DropdownMenuItem
                   key={item.label}
                   asChild
-                  className="cursor-pointer rounded-[14px] px-3.5 py-2.5 text-[15px] font-medium text-neutral-900 hover:bg-[#F3F4F6] focus:bg-[#F3F4F6] data-[highlighted]:bg-[#F3F4F6] data-[highlighted]:text-black transition-colors outline-none"
+                  className="cursor-pointer group rounded-[10px] px-3.5 py-3 text-[15px] font-medium text-neutral-900 hover:bg-[#F3F4F6] focus:bg-[#F3F4F6] data-[highlighted]:bg-[#F3F4F6] data-[highlighted]:text-black transition-colors outline-none"
                 >
                   <Link href={item.href} className="flex items-center gap-3.5 w-full">
                     <span className="flex items-center justify-center size-[20px] shrink-0 text-black">
                       <IconComponent className="size-[17px] text-black" />
                     </span>
-                    <span className="leading-none">{item.label}</span>
+                    <span className="leading-none group-hover:translate-x-2 common-transition">{item.label}</span>
                   </Link>
                 </DropdownMenuItem>
               );

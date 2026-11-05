@@ -103,7 +103,7 @@ function Header() {
                             <MainBtn text="Sign In" url="/login" btnType="outline" />
                         </div>
 
-                        {/* Profile Section (shown when signed in - currently hidden as requested) */}
+                        {/* Profile Section (shown when signed in) */}
                         <div className="block">
                             <HeaderProfile />
                         </div>
