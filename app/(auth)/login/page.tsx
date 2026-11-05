@@ -28,9 +28,8 @@ export default function LoginPage() {
         >
 
         </div>
-        <AuthContent />
+        <AuthContent AuthData="login" />
       </div>
     </div>
   );
 }
-

@@ -97,7 +97,7 @@ export default function AuthLogin() {
         <div className="text-center mt-4 sm:mt-5">
           <p className="font-poppins text-[13px] text-gray-700">
             Don&apos;t have an account?{" "}
-            <Link href="#" className="font-bold text-black hover:underline">
+            <Link href="/signup" className="font-bold text-black hover:underline">
               Create Account
             </Link>
           </p>

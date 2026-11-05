@@ -1,9 +1,14 @@
 import Image from "next/image";
 import AuthLogin from "./AuthLogin";
+import AuthSignUp from "./AuthSignUp";
 
-export default function AuthContent() {
+interface AuthContentProps {
+  AuthData?: "login" | "signup";
+}
+
+export default function AuthContent({ AuthData = "login" }: AuthContentProps) {
   return (
-    <div className="relative z-1 w-full flex flex-col items-center justify-center bg-white lg:bg-transparent lg:p-0 md:p-[40px] sm:p-[30px] p-[20px] lg:rounded-none rounded-[30px] max-h-[90vh] overflow-y-auto">
+    <div className="auth-maindiv relative z-1 w-full flex flex-col items-center justify-center bg-white lg:bg-transparent lg:p-0 md:p-[40px] sm:p-[30px] p-[30px] lg:rounded-none rounded-[30px]">
       {/* Logo */}
       <div className="w-fit flex justify-start mb-4 sm:mb-7 lg:hidden">
         <Image
@@ -17,8 +22,8 @@ export default function AuthContent() {
           style={{ width: "auto", height: "auto" }}
         />
       </div>
-      <AuthLogin />
+      {AuthData === "login" && <AuthLogin />}
+      {AuthData === "signup" && <AuthSignUp />}
     </div>
   );
 }
-
