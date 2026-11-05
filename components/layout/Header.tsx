@@ -100,7 +100,7 @@ function Header() {
 
                         {/* Buttons */}
                         <div className="md:block hidden">
-                            <MainBtn text="Sign In" url="/" btnType="outline" />
+                            <MainBtn text="Sign In" url="/login" btnType="outline" />
                         </div>
 
                         {/* Profile Section (shown when signed in - currently hidden as requested) */}

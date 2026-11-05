@@ -63,7 +63,7 @@ export default function LoginAsGroomer({
       <div className="flex flex-col mb-4">
         <label
           htmlFor="groomer-email"
-          className="flex items-center gap-2 font-poppins text-[13px] sm:text-[14px] font-medium text-black mb-1.5"
+          className="flex items-center gap-2 font-poppins text-[14px] md:text-[16px] font-medium text-black mb-1.5"
         >
           <Icons.AuthEmail_Icon className="shrink-0" />
           <span>Enter Email ID</span>
@@ -76,7 +76,7 @@ export default function LoginAsGroomer({
           value={email}
           onChange={(e) => handleEmailChange(e.target.value)}
           placeholder="groomer@shearheaven.com"
-          className="w-full bg-white border border-black/80 rounded-full px-5 py-3 text-[14px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+          className="w-full bg-white border border-black rounded-full px-5 py-4 text-[14px] lg:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
         />
       </div>
 
@@ -84,7 +84,7 @@ export default function LoginAsGroomer({
       <div className="flex flex-col mb-2">
         <label
           htmlFor="groomer-password"
-          className="flex items-center gap-2 font-poppins text-[13px] sm:text-[14px] font-medium text-black mb-1.5"
+          className="flex items-center gap-2 font-poppins text-[14px] md:text-[16px] font-medium text-black mb-1.5"
         >
           <Icons.AuthPassword_Icon className="shrink-0" />
           <span>Enter Password</span>
@@ -100,7 +100,7 @@ export default function LoginAsGroomer({
             setErrorMessage("");
           }}
           placeholder="Enter Password"
-          className="w-full bg-white border border-black/80 rounded-full px-5 py-3 text-[14px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+          className="w-full bg-white border border-black rounded-full px-5 py-4 text-[14px] lg:text-[16px] text-black placeholder:text-gray-400 outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
         />
       </div>
 
@@ -108,7 +108,7 @@ export default function LoginAsGroomer({
       <div className="flex justify-end mb-5">
         <Link
           href="#"
-          className="font-poppins text-[12px] text-gray-700 hover:text-black underline transition-colors"
+          className="font-poppins text-[14px] text-black hover:text-black underline transition-colors"
         >
           Forgot Password?
         </Link>
@@ -126,7 +126,7 @@ export default function LoginAsGroomer({
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full bg-linear-to-r from-gradeColor1 to-gradeColor2 hover:opacity-90 active:scale-[0.99] text-white font-poppins font-bold text-[15px] sm:text-[16px] py-3.5 rounded-full transition-all cursor-pointer shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full bg-linear-to-r from-gradeColor1 to-gradeColor2 hover:opacity-90 active:scale-[0.99] text-white font-poppins font-bold text-[14px] md:text-[16px] lg:text-[18px] py-3.5 rounded-full transition-all cursor-pointer shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {isLoading ? "Logging in..." : "Login"}
       </button>

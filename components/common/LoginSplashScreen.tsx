@@ -26,12 +26,12 @@ const splashFeatures: SplashFeature[] = [
 
 export default function LoginSplashScreen() {
   return (
-    <div className="relative w-full h-full flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 xl:p-10 select-none">
+    <div className="relative w-full h-full flex flex-col items-center justify-center select-none">
       {/* Outer Card Wrapper with bottom padding so dogs can overlap */}
-      <div className="relative w-full max-w-[680px] flex flex-col items-center pb-14 sm:pb-16 lg:pb-20">
+      <div className="relative w-full  flex flex-col items-center h-full">
         {/* Sky Background Card */}
         <div
-          className="relative w-full rounded-[36px] sm:rounded-[44px] lg:rounded-[48px] overflow-hidden bg-cover bg-center pt-8 sm:pt-12 px-6 sm:px-10 pb-48 sm:pb-56 min-h-[580px] sm:min-h-[640px] lg:min-h-[660px] xl:min-h-[700px] shadow-sm flex flex-col items-center"
+          className="relative w-full rounded-[36px] sm:rounded-[44px] lg:rounded-[48px] overflow-hidden bg-cover bg-center pt-8 sm:pt-12 px-6 lg:px-10 mc:px-15 2xl:px-20 pb-48 sm:pb-56 min-h-[580px] sm:min-h-[640px] lg:min-h-[660px] xl:min-h-[700px] flex flex-col items-center"
           style={{
             backgroundImage: "url('/assets/img/auth/authbg.jpg')",
           }}
@@ -45,36 +45,36 @@ export default function LoginSplashScreen() {
               width={160}
               height={88}
               priority
-              className="w-[140px] sm:w-[160px] h-auto"
+              className="w-[140px] xl:!w-[160px] h-auto"
               style={{ width: "auto", height: "auto" }}
             />
           </div>
 
           {/* Promotional Description */}
-          <p className="font-poppins text-[13px] sm:text-[14px] lg:text-[15px] text-black font-normal max-w-[440px] mx-auto text-center leading-relaxed mb-6 sm:mb-8">
+          <p className="font-poppins text-[14px] md:text-[16px] 2xl:text-[18px] text-black font-normal 2xl:max-w-[640px] max-w-[440px] mx-auto text-center leading-tight mb-6 sm:mb-8">
             Luxury pet spa booking - groomers, packages, and real-time slots powered by your salon API.
           </p>
 
           {/* Three Feature Cards Container (Translucent Glass Effect) */}
-          <div className="w-full max-w-[540px] mx-auto bg-white/70 backdrop-blur-md rounded-[24px] sm:rounded-[28px] border border-white/80 p-4 sm:p-5 shadow-xs">
+          <div className="w-full mx-auto bg-white/70 backdrop-blur-md rounded-[24px] sm:rounded-[28px] border border-white/80 py-10 2xl:px-20 xl:px-10 lg:px-4">
             <div className="grid grid-cols-3 gap-2 sm:gap-3 text-center items-start">
               {splashFeatures.map((feature) => (
                 <div key={feature.id} className="flex flex-col items-center">
                   {/* Black Circular Icon Container */}
-                  <div className="size-[42px] sm:size-[46px] bg-black rounded-full flex items-center justify-center mx-auto mb-2.5 sm:mb-3 shadow-xs">
+                  <div className="size-[42px] lg:size-[62px] bg-black rounded-full flex items-center justify-center mx-auto mb-2.5 sm:mb-3">
                     <Image
                       src={feature.icon}
                       alt=""
                       width={22}
                       height={22}
-                      className="w-[20px] sm:w-[22px] h-[20px] sm:h-[22px] object-contain"
+                      className="!size-[26px] object-contain"
                       style={{ width: "auto", height: "auto" }}
                       aria-hidden="true"
                     />
                   </div>
 
                   {/* Feature Description */}
-                  <span className="font-poppins text-[11px] sm:text-[12px] font-medium text-black leading-snug px-1">
+                  <span className="2xl:w-[80%] font-poppins text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] font-medium text-black leading-tight px-1">
                     {feature.title}
                   </span>
                 </div>
